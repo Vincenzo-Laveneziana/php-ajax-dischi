@@ -14,12 +14,6 @@
       "year" => "2020",
     ],
     [
-      "poster" => "https://m.media-amazon.com/images/I/71+H-bohdhL._SS500_.jpg",
-      "title" => "Una Vita In Vacanza",
-      "author" => "Lo Stato Sociale",
-      "year" => "2018",
-    ],
-    [
       "poster" => "https://m.media-amazon.com/images/I/81DH2FECgIL._SS500_.jpg",
       "title" => "Il ballo delle incertezze",
       "author" => "Ultimo",
@@ -54,6 +48,12 @@
       "title" => "La Serenissima",
       "author" => "Rondò Veneziano",
       "year" => "1979",
+    ],
+    [
+      "poster" => "https://m.media-amazon.com/images/I/71+H-bohdhL._SS500_.jpg",
+      "title" => "Una Vita In Vacanza",
+      "author" => "Lo Stato Sociale",
+      "year" => "2018",
     ],
   ]
 

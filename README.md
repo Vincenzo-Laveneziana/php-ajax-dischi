@@ -12,7 +12,7 @@
 
  ​ ​ :desktop_computer: Project Preview:
 
- ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ <img src="assets/img/Cattura.GIF" width= "700px">
+ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ <img src="dist/img/Cattura.png" width= "700px">
 
 
 #
