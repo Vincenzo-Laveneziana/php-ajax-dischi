@@ -43,6 +43,18 @@
       "author" => "J-AX con Neffa",
       "year" => "2014",
     ],
+    [
+      "poster" => "https://m.media-amazon.com/images/I/81K6oi+IzML._SS500_.jpg",
+      "title" => "Dall'alba al tramonto",
+      "author" => "Ermal Meta",
+      "year" => "2018",
+    ],
+    [
+      "poster" => "https://m.media-amazon.com/images/I/71VPhMi6R8L._SS500_.jpg",
+      "title" => "La Serenissima",
+      "author" => "Rondò Veneziano",
+      "year" => "1979",
+    ],
   ]
 
 ?>
