@@ -34,7 +34,6 @@
   </header>
 
   <!-- Main -->
-  
   <main>
     <div id="albums">
 

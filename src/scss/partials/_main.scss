@@ -1,3 +1,30 @@
 /****************** 
   Main
 ******************/
+
+#albums{
+  @include container;
+  @include flex-center-center(row, center,flex-start);
+  flex-wrap:wrap;
+  margin-top: 100px;
+
+  .album{
+    width: 300px;
+    padding: 10px 10px 30px;
+    margin: 5px;
+    background: black;
+    color: white;
+
+    ul{
+      @include reset-list;
+
+      img{
+        width: 100%;
+      }
+
+      
+    }
+
+    
+  }
+}

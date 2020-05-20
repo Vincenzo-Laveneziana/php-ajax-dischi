@@ -13,7 +13,7 @@
 }
 
 body {
-  /* background-color: $black; */
+  background-color: #1A1A1A;
   /* color: $white; */
   font-family: "Open Sans", sans-serif;
 }
@@ -23,18 +23,49 @@ body {
 ******************/
 
 #head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   width: 100%;
   background: #000000;
 }
 
 #head img {
-  width: 50px;
+  width: 40px;
 }
 
 /****************** 
   Main
 ******************/
+
+#albums {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+#albums .album {
+  width: 300px;
+  padding: 10px 10px 30px;
+  margin: 5px;
+  background: black;
+  color: white;
+}
+
+#albums .album ul {
+  list-style: none;
+}
+
+#albums .album ul img {
+  width: 100%;
+}
 
 /****************** 
   Footer

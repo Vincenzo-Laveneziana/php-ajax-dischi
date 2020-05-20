@@ -4,7 +4,10 @@
 
 
 //Mixins
-//Mixins
+@mixin container {
+  width: 1170px;
+  margin: 0 auto;
+}
 
 @mixin flex-center-center($direction: row, $justify: flex-start, $align: flex-start) {
   display: flex;
@@ -87,7 +90,7 @@
 }
 
 body {
-  /* background-color: $black; */
+  background-color: #1A1A1A; 
   /* color: $white; */
   font-family: $open-sans;
 }
