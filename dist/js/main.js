@@ -136,8 +136,10 @@ function filterArtists(albums, template, inputSearch) {
     method: "GET"
   };
   $.ajax(settings).done(function (dati) {
+    $(".noResult").text("Nessun Artista trovato");
     dati.forEach(function (element) {
       if (inputSearch.val().toLowerCase() === element.author.toLowerCase()) {
+        $(".noResult").text("");
         var context = {
           poster: element.poster,
           title: element.title,

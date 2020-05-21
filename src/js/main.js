@@ -65,20 +65,20 @@ function filterArtists(albums, template,inputSearch){
   $.ajax(settings)
   .done(dati => {
 
+    $(".noResult").text("Nessun Artista trovato");
+
     dati.forEach(element => {
-      
       if(inputSearch.val().toLowerCase() === element.author.toLowerCase()){
         
+        $(".noResult").text("");
         var context = {
           poster: element.poster,
           title: element.title,
           author: element.author,
           year: element.year
         };
-  
         albums.append(template(context)); 
       } 
-
     });
   })
   .fail(error => {
