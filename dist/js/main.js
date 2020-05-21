@@ -99,11 +99,17 @@ $(document).ready(function () {
   var template = Handlebars.compile(source); //referenze
 
   var albums = $("#albums");
-  print(albums, template);
+  var inputSearch = $("#search");
+  print(albums, template); //alla pressione del tasto invio nella search
+
+  inputSearch.keyup(function (event) {
+    if (event.which === 13) {
+      filterArtists(albums, template, inputSearch);
+    }
+  });
 });
 
 function print(albums, template) {
-  console.log("chiama api");
   var settings = {
     url: "partials/script/database.php",
     method: "GET"
@@ -117,6 +123,29 @@ function print(albums, template) {
         year: element.year
       };
       albums.append(template(context));
+    });
+  }).fail(function (error) {
+    console.log("Si è verificato un errore " + error.status);
+  });
+}
+
+function filterArtists(albums, template, inputSearch) {
+  albums.html("");
+  var settings = {
+    url: "partials/script/database.php",
+    method: "GET"
+  };
+  $.ajax(settings).done(function (dati) {
+    dati.forEach(function (element) {
+      if (inputSearch.val().toLowerCase() === element.author.toLowerCase()) {
+        var context = {
+          poster: element.poster,
+          title: element.title,
+          author: element.author,
+          year: element.year
+        };
+        albums.append(template(context));
+      }
     });
   }).fail(function (error) {
     console.log("Si è verificato un errore " + error.status);

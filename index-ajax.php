@@ -24,13 +24,24 @@
   <header>  
     <div id="head">
       <img src="dist\img\spotify-logo.png" alt="Logo">
+      
+      <div class="div-search">
+
+        <input id="search" type="text" placeholder="Cerca un artista">
+        <i id="search-btn" class="fa fa-search"></i>
+        
+      </div>
+     
     </div>
   </header>
 
   <!-- Main -->
   <main>
-    <div id="albums">
 
+    <h2 class="noResult"></h2>
+
+    <div id="albums">
+   
       
 
     </div>

@@ -5,7 +5,7 @@
 
 //Mixins
 @mixin container {
-  width: 1170px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -93,6 +93,12 @@ body {
   background-color: #1A1A1A; 
   /* color: $white; */
   font-family: $open-sans;
+}
+
+header{
+  height: 60px;
+  width: 100%;
+  background: $black;
 }
 
 main{

@@ -22,7 +22,7 @@
     [
       "poster" => "https://m.media-amazon.com/images/I/71MyHmXGziL._SS500_.jpg",
       "title" => "Safe and Sound",
-      "author" => "Ultimo",
+      "author" => "Capital Cities",
       "year" => "2018",
     ],
     [
@@ -50,11 +50,30 @@
       "year" => "1979",
     ],
     [
+      "poster" => "https://images-na.ssl-images-amazon.com/images/I/51QhZOodd-L._AC_.jpg",
+      "title" => "Vietato Morire",
+      "author" => "Ermal Meta",
+      "year" => "2010",
+    ],
+    [
       "poster" => "https://m.media-amazon.com/images/I/71+H-bohdhL._SS500_.jpg",
       "title" => "Una Vita In Vacanza",
       "author" => "Lo Stato Sociale",
       "year" => "2018",
     ],
+    [
+      "poster" => "https://m.media-amazon.com/images/I/91TXXJH3FYL._SS500_.jpg",
+      "title" => "I Tuoi Particolari",
+      "author" => "Ultimo",
+      "year" => "2019",
+    ],
+    [
+      "poster" => "https://m.media-amazon.com/images/I/71zv4owwz3L._SS500_.jpg",
+      "title" => "Intro",
+      "author" => "J-AX",
+      "year" => "2018",
+    ],
+    
   ];
 
   header("Content-Type: application/json");

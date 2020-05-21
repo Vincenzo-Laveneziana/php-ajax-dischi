@@ -1,6 +1,10 @@
 /****************** 
   Main
 ******************/
+.noResult{
+  text-align: center;
+  color: white;
+}
 
 #albums{
   @include container;
@@ -19,7 +23,8 @@
       @include reset-list;
 
       img{
-        width: 100%;
+        width: 280px;
+        height: 280px;
       }
 
       
