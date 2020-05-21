@@ -55,6 +55,10 @@
       "author" => "Lo Stato Sociale",
       "year" => "2018",
     ],
-  ]
+  ];
+
+  header("Content-Type: application/json");
+
+  echo json_encode($albums);
 
 ?>

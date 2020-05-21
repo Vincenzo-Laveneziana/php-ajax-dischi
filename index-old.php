@@ -1,6 +1,6 @@
 <!-- Import databese album  -->
 <?php 
-  include __DIR__ .  '/partials/database.php';
+  include __DIR__ .  '/partials/data/database.php';
 ?> 
 
 
@@ -29,7 +29,7 @@
   <!-- Header -->
   <header>  
     <div id="head">
-      <img src="dist\img\spotify-logo.png" alt="">
+      <img src="dist\img\spotify-logo.png" alt="Logo">
     </div>
   </header>
 
@@ -58,18 +58,6 @@
 
     </div>
   </main>
-
-  
-
-
-
-  <!-------------------- JS -------------------->
-  <!-- Jquery -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
-
-  <!-- Main JS -->
-  <script src="dist/js/main.js"></script>
-
 
 </body>
 </html>
