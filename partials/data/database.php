@@ -22,8 +22,8 @@
     [
       "poster" => "https://m.media-amazon.com/images/I/71MyHmXGziL._SS500_.jpg",
       "title" => "Safe and Sound",
-      "author" => "Ultimo",
-      "year" => "2018",
+      "author" => "Capital Cities",
+      "year" => "2011",
     ],
     [
       "poster" => "https://m.media-amazon.com/images/I/718LCOi83zL._SS500_.jpg",
@@ -54,6 +54,12 @@
       "title" => "Una Vita In Vacanza",
       "author" => "Lo Stato Sociale",
       "year" => "2018",
+    ],
+    [
+      "poster" => "https://m.media-amazon.com/images/I/91TXXJH3FYL._SS500_.jpg",
+      "title" => "I Tuoi Particolari",
+      "author" => "Ultimo",
+      "year" => "2019",
     ],
   ];
 

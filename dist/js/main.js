@@ -104,54 +104,49 @@ $(document).ready(function () {
 
   inputSearch.keyup(function (event) {
     if (event.which === 13) {
-      filterArtists(albums, template, inputSearch);
+      print(albums, template, inputSearch, "filter");
     }
   });
-});
+}); //fine doc ready
 
-function print(albums, template) {
+function print(albums, template, inputSearch, type) {
   var settings = {
     url: "partials/script/database.php",
     method: "GET"
   };
   $.ajax(settings).done(function (dati) {
     dati.forEach(function (element) {
-      var context = {
-        poster: element.poster,
-        title: element.title,
-        author: element.author,
-        year: element.year
-      };
-      albums.append(template(context));
+      context(element, template, albums);
     });
-  }).fail(function (error) {
+
+    if (type == "filter") {
+      albums.html("");
+      $(".noResult").text("Nessun Artista trovato");
+      dati.forEach(function (element) {
+        if (inputSearch.val().toLowerCase() === element.author.toLowerCase()) {
+          $(".noResult").text("");
+          context(element, template, albums);
+        } else if (inputSearch.val().toLowerCase() == "") {
+          $(".noResult").text("");
+          context(element, template, albums);
+        }
+      }); //fine dati.foreach
+    } //fine if filter
+
+  }) //fine .done
+  .fail(function (error) {
     console.log("Si è verificato un errore " + error.status);
   });
 }
 
-function filterArtists(albums, template, inputSearch) {
-  albums.html("");
-  var settings = {
-    url: "partials/script/database.php",
-    method: "GET"
+function context(element, template, albums) {
+  var context = {
+    poster: element.poster,
+    title: element.title,
+    author: element.author,
+    year: element.year
   };
-  $.ajax(settings).done(function (dati) {
-    $(".noResult").text("Nessun Artista trovato");
-    dati.forEach(function (element) {
-      if (inputSearch.val().toLowerCase() === element.author.toLowerCase()) {
-        $(".noResult").text("");
-        var context = {
-          poster: element.poster,
-          title: element.title,
-          author: element.author,
-          year: element.year
-        };
-        albums.append(template(context));
-      }
-    });
-  }).fail(function (error) {
-    console.log("Si è verificato un errore " + error.status);
-  });
+  albums.append(template(context));
 }
 
 /***/ }),
